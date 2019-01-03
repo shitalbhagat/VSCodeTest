@@ -19,7 +19,7 @@ namespace Watcher
             fileSystemWatcher.Created+= new FileSystemEventHandler(program.FileChanged);
 
             fileSystemWatcher.NotifyFilter = NotifyFilters.FileName;
-            fileSystemWatcher.Filter = "user_Details.csv";
+            fileSystemWatcher.Filter = "*.csv";
             fileSystemWatcher.EnableRaisingEvents = true;
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
